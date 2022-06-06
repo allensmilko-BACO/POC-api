@@ -1,0 +1,56 @@
+{{template "_header.html" .}}
+<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Baco</a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="auth">Ingresar</a></li>
+                <li>
+                    <a href="#">Cuenta</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                 <button class="uk-button uk-button-primary">Crear espacio de trabajo</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3;animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="assets/img/1.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/2.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                    <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/img/3.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-position-small uk-text-center">
+                    <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">Heading</h2>
+                    <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+    </div>
+{{template "_footer.html"}}
